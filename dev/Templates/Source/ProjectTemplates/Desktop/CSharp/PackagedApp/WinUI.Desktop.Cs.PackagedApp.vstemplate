@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
-    <Name ID="1029" Package="FIXME-PACKAGEGUID" />
-    <Description ID="1031" Package="FIXME-PACKAGEGUID" />
+    <Name ID="1089" Package="FIXME-PACKAGEGUID" />
+    <Description ID="1091" Package="FIXME-PACKAGEGUID" />
     <Icon>WinUI.Desktop.Cs.PackagedApp.ico</Icon>
     <TemplateID>Microsoft.WinUI.Desktop.Cs.PackagedApp</TemplateID>
     <TemplateGroupID>WinRT-Managed</TemplateGroupID>
@@ -25,7 +25,12 @@
   </TemplateData>
   <TemplateContent PreferedSolutionConfiguration="Debug|x64">
     <CustomParameters>
+      <CustomParameter Name="$WindowsAppSDKNupkgVersion$" Value="FIXME-Verify-Directory.Build.Targets-XmlPoke-Queries" />
+      <CustomParameter Name="$WindowsSDKBuildToolsNupkgVersion$" Value="FIXME-Verify-Directory.Build.Targets-XmlPoke-Queries" />
       <CustomParameter Name="$DotNetVersion$" Value="FIXME-Verify-Directory.Build.Targets-XmlPoke-Queries"/>
+      <CustomParameter Name="$WindowsAppSdkVersion$" Value="*" />
+      <CustomParameter Name="$WindowsSdkBuildToolsVersion$" Value="*" />
+      <CustomParameter Name="$WindowsSdkBuildToolsWinAppVersion$" Value="*" />
     </CustomParameters>
     <ProjectCollection>
       <ProjectTemplateLink ProjectName="$projectname$ (Package)" CopyParameters="true">WapProj\WinUI.Desktop.Cs.WapProj.vstemplate</ProjectTemplateLink>
